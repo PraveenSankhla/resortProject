@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Praveen Sankhla</title>
+   <style type="text/css">
+      div {
+         height: 200px;
+         line-height: 200px;
+         color: white;
+         text-align: center;
+         padding-left: 20px;
+         padding-right: 20px;
+      }
+	  
+	  p {size:30px;
+		color: yellow;
+		}
+   </style>
+</head>
+<body>
+   <div onclick="changeColor(this)" style="background-color: red;">
+     <p>Tap me to change my color!</p>
+   </div>
+
+   <script>
+      function changeColor(element) {
+         var currentColor = element.style.backgroundColor;
+         if(currentColor == "red") {
+            element.style.backgroundColor = "green";
+         } else {
+            element.style.backgroundColor = "red"; 
+         }
+      }
+   </script>
+</body>
+</html>
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+   <title> Try It Yourself </title>
+   <style type="text/css">
+      button {
+         font-family: sans-serif;
+         border: none;
+         padding: 15px 30px;
+         font-size: 20px;
+         outline: none;
+         margin: 10px;
+      }
+      #btn {
+         background-color: rgb(23, 52, 89);
+         color: #f8f9f9;
+         box-shadow: .5px .5px 1px 2px #000000;
+      }
+   </style>
+</head>
+<body>
+   <button id="btn"> Show a Dialog </button>
+
+   <script type="text/javascript">
+      document.getElementById("btn").onclick = function() {
+         alert("Hey ! You can't access this. this is private.")
+      }
+   </script>
+</body>
+</html>
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+   <title> Try It Yourself </title>
+</head>
+<body>
+   <p id="demo"> Hello World! </p>
+   <button type="button" onclick="myFunc()"> Change Value </button>
+
+   <script>
+      function myFunc() {
+         document.getElementById("demo").innerHTML = "Hello Everyone!";
+      }
+   </script>
+</body>
+</html>
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+   <title> Try It Yourself </title>
+</head>
+<body>
+   <img src="F:\PHOTO\Extra\Image-461.jpg" id="image" />
+   <button type="button" onclick="myFunc()"> Change Image </button>
+
+   <script>
+      function myFunc() {
+         document.getElementById("image").src = "images/star.png";
+      }
+   </script>
+</body>
+</html>
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+   <title> Try It Yourself </title>
+</head>
+<body>
+   <p id="demo" style="color: gold"> Hello World! </p>
+   <button type="button" onclick="myFunc()"> Change Style </button>
+
+   <script>
+      function myFunc() {
+         document.getElementById("demo").style.color = "red";
+         document.getElementById("demo").style.fontWeight = "bold";
+         document.getElementById("demo").style.fontSize = "300%"
+      }
+   </script>
+</body>
+</html>
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+   <title> Try It Yourself </title>
+</head>
+<body>
+   <div id="demo" style="width: 100px; height: 30px; background-color: yellow"> Hello World! </div>
+   <button type="button" onclick="show()"> Show </button>
+   <button type="button" onclick="hide()"> Hide </button>
+
+   <script>
+      function show() {
+         document.getElementById("demo").style.display = "block";
+      }
+      function hide() {
+         document.getElementById("demo").style.display = "none";
+      }
+   </script>
+</body>
+</html>
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+   <title> Try It Yourself </title>
+</head>
+<body>
+   
+
+   <script>
+      var x = 5;
+      var y = 5;
+      var sum = x + y; // adds x and y
+                          
+      console.log(sum); // prints 10
+   </script>
+</body>
+</html>
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+   <title> Try It Yourself </title>
+</head>
+<body>
+   <button type="button" onclick="myFunc()"> Show Dialog Box </button>
+
+   <script>
+      function myFunc() {
+         var x = 5;
+         var y = 5;
+         var sum = x + y; // adds x and y
+      
+         alert(sum); // shows 10
+      }
+   </script>
+</body>
+</html>
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+   <title> Try It Yourself </title>
+</head>
+<body>
+   <p id="demo"></p>
+   <button type="button" onclick="myFunc()"> Write </button>
+
+   <script>
+      function myFunc() {
+         var x = 5;
+         var y = 5;
+         var sum = x + y; // adds x and y
+                       
+         document.getElementById("demo").innerHTML = sum; // writes 10
+      }
+   </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+   <title> Try It Yourself </title>
+</head>
+<body>
+   <p id="demo"></p>
+                   <button type="button" onclick="myFunc()"> Write </button>
+
+   <script>
+      function myFunc() {
+         var x = 5;
+         var y = 5;
+         var sum = x + y; // adds x and y
+                                        
+         document.write(sum); // writes 10 to the page
+      }
+   </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+   <title> Try It Yourself </title>
+</head>
+<body>
+   <p id="demo"></p>
+                   <button type="button" onclick="myFunc()"> Write </button>
+
+   <script>
+      function myFunc() {
+         var x = 5;
+         var y = 5;
+         var sum = x + y; // adds x and y
+                                        
+         document.write(sum); // writes 10 to the page
+      }
+   </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+   <title> Try It Yourself </title>
+</head>
+<body>
+   
+
+   <script>
+      var num = 5; // assigns number 5 to the variable named num
+      document.write(num); // prints the output
+   </script>
+</body>
+</html>
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+   <title> Try It Yourself </title>
+</head>
+<body>
+   <p id="demo"></p>
+                   <button type="button" onclick="myFunc()"> Show Product </button>
+
+   <script>
+      function myFunc() {
+         var x = 6;
+         var y = 9;
+         var sum = x + y; // adds x and y
+         var product = x * y; // multiplies y to x
+      
+         document.getElementById("demo").innerHTML = product;
+         // document.getElementById("demo").innerHTML = sum;
+      }
+   </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+   <title> Try It Yourself </title>
+</head>
+<body>
+   
+
+   <script>
+      var firstName = "John";
+      var lastName = "Doe";
+      var age = 30;
+      
+      // printing values
+      document.write(firstName + " " + lastName + "<br>");
+      document.write(age);
+   </script>
+</body>
+</html>
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+   <title> Try It Yourself </title>
+</head>
+<body>
+   
+
+   <script>
+      var firstName = "John", lastName = "Doe", age = 30; // declares three variables at once
+                          
+      // printing values
+      document.write(firstName + " " + lastName + "<br>");
+      document.write(age);
+   </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+   <title> Try It Yourself </title>
+</head>
+<body>
+   <p id="demo"></p>
+
+   <script>
+      var isCodingFun = true;
+      var isMathFun = true;
+      
+      document.getElementById("demo").innerHTML = 
+      "Is coding fun? " + isCodingFun + "<br>" +
+      "Is Math fun? " + isMathFun;
+   </script>
+</body>
+</html>
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+   <title> Try It Yourself </title>
+</head>
+<body>
+   <p id="demo"></p>
+   <p> Try changing the value of one of the Booleans to output false. </p>
+
+   <script>
+      var x = 3;
+      var y = 3;
+      var areTheyEqual = (x == y);
+      
+      document.getElementById("demo").innerHTML = areTheyEqual;
+   </script>
+</body>
+</html>
+
+
+
+
+
+
+
+DOCTYPE html>
+<html>
+<head>
+   <title> Try It Yourself </title>
+</head>
+<body>
+   <p id="demo"></p>
+   <p> Accesing object's values will be taught later in the course. </p>
+
+   <script>
+      var banana = {
+         color: "yellow",
+         size: "long",
+         quantity: 3,
+         isSweet: true,
+      };
+      
+      document.getElementById("demo").innerHTML =
+      "Banana <br>" +
+      "Color: " + banana.color + "<br>" +
+      "Size: " + banana.size + "<br>" +
+      "Quantity: " + banana.quantity + "<br>" +
+      "Does it taste sweet: " + banana.isSweet;
+   </script>
+</body>
+</html>
+
+
+
+
+[10:51 am, 23/06/2020] Bhai Praveen Sankhla: <html>
+<head>
+   <title> Try It Yourself </title>
+</head>
+<body>
+   <p id="demo"></p>
+   <p> Accesing array's values will be taught later in the course. </p>
+
+   <script>
+      var fruits = ["apple", "oranges", "bananas"];
+      document.getElementById("demo").innerHTML =
+      fruits[0] + " " + fruits[1] + " " + fruits[2];
+   </script>
+</body>
+</html>
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+   <title> Try It Yourself </title>
+</head>
+<body>
+   
+
+   <script>
+      var x = "text"; // x is a string
+      x = true;       // x is now a boolean
+      x = 21;         // x is now a number
+      document.write(x);
+   </script>
+</body>
+</html>
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Typeof </title>
+</head>
+<body>
+   <p id="demo"></p>
+
+   <script>
+      document.getElementById("demo").innerHTML =
+      typeof "Her name is Rachell." + "<br>" + // returns "string"
+      typeof 21 + "<br>" + // returns "number"
+      typeof true + "<br>" + // returns "boolean"
+      typeof undefined; // returns "undefined"
+   </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+   <title> Try It Yourself </title>
+</head>
+<body>
+   <p id="demo"> I am the paragraph with "<b>demo</b>" id. </p>
+   <p id="demo1"> I am the paragraph with "<b>demo1</b>" id. My value is not changed because the <b>fullName</b> variable is <b>undefined</b> when used outside the function scope. </p>
+   <button onclick="getAge(19)"> Call Function </button>
+
+   <script>
+      function getAge(age) {
+         var fullName = "John Doe";
+         // the fullName variable can be used here
+         document.getElementById("demo").innerHTML =
+         fullName + " is " + age + " years old."
+      }
+       
+   </script>
+</body>
+</html>
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+   <title> Try It Yourself </title>
+</head>
+<body>
+   
+
+   <script>
+      var fruits = {
+         mango: {
+            color: "yellow",
+            taste: "sweet"
+         },
+         apple: {
+            color: "red",
+            taste: "sweet"
+         }
+      }
+      
+      document.write(fruits.mango.color);
+   </script>
+</body>
+</html>
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+   <title> Try It Yourself </title>
+</head>
+<body>
+   <p> In this , the <br>Praveen Sankhla age show when</br> the button below is clicked. </p>
+   <button onclick="person.showDetails()"> Show Details </button>
+
+   <script>
+      var person = {
+         name: "Praveen Sankhla",
+         age: 19,
+         showDetails: function() {
+            alert(this.name + " is " + this.age + " years old.");
+         }
+      };
+   </script>
+</body>
+</html>
