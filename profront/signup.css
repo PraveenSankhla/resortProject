@@ -1,0 +1,27 @@
+.body{
+    background-image: url(C:\Users\Hp\Desktop\Resort High Level Project\praveen\Images\01.jpg);
+}
+
+.vl {
+    border-left: 1px solid lightgray;
+    height: 680px;
+    position: absolute;
+    left: 50%;
+    margin-left: -3px;
+    top: 0;
+  }
+
+.img{
+    width: auto;
+    height: 500px;
+    padding-top: 20px;
+    padding-right: 30px;
+    padding-bottom: 40px;
+    padding-left: 30px;
+}  
+
+.Card{
+background-color: aqua;
+width: auto;
+height:500px ;
+}
